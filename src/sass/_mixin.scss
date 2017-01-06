@@ -1,0 +1,18 @@
+@mixin fondoDiv($mtop) {
+	margin-top: $mtop;
+	background-color: #fff;
+	padding: 30px 20px;
+}
+@mixin boton{
+	width: 100%;
+	margin-top: 5px;
+	border-radius: 0px;
+	background-color: $colorPrincipal;
+	border: none;
+}
+
+@mixin titulo{
+	font-size: 1.3em;
+	font-weight: 500;
+	margin: 0px;
+}

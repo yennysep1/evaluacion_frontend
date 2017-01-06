@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Examen Herramientas Productividad</title>
+	<!--REQUIRED STYLE SHEETS-->
+	<!-- <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+	  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="dist/css/style.min.css">
+</head>
+<body>
+	<header>
+	    <div class="container">
+			<div class="nav">
+				<div class="row">
+					<div class="col-xs-10">
+						<img src="dist/img/logo-gris.jpg" class="left-align" alt="">
+					</div>
+					<div class="col-xs-2">
+						 <i class="fa fa-info-circle" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+		</div><!-- fin container-->
+	</header><!--END NAV SECTION -->
+
+
+	<div id="home-sec">   
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-4">
+					<div class="sec">
+						<div class="form-group">
+						  <h1>ORIGEN</h1>
+						  <label for="sel1"></label>
+						  <select class="form-control" id="sel1">
+						  	<option value="null">seleccionar</option>
+						  </select>
+						</div>
+						<div class="form-group">
+						  <h1>DESTINO</h1>
+						  <label for="sel2"></label>
+						  <select class="form-control" id="sel2">
+							<option  value="null">seleccionar</option>
+						  </select>
+						</div>
+					</div><!--fin div select-->
+					<button type="button" class="btn btn-primary">Buscar</button><!--botton-->
+
+					<div id="vehiculos">
+						<h1>VEHICULO</h1>
+						<h6>seleccione</h6>
+						<div class="row row-vehiculo">
+							<div class="col-xs-1">
+								<div class="radio">
+								  <label>
+								    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+								  </label>
+								</div>
+							</div>
+							<div class="col-xs-3">
+								<img src="dist/img/moto.jpg" class="img-responsive text-center" alt="moto">
+							</div>
+							<div class="col-xs-5">
+								<h6><strong>Motocicleta</strong></h6>
+								<p>máximo 2 pasajeros</p>
+							</div>
+							<div class="col-xs-3"></div>
+							<span>$ 3.680</span>
+						</div><!--fin vehiculo 1-->
+						<div class="row row-vehiculo">
+							<div class="col-xs-1">
+								<div class="radio">
+								  <label>
+								    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+								  </label>
+								</div>
+							</div>
+							<div class="col-xs-3">
+								<img src="dist/img/auto.jpg" class="img-responsive tetx-center" alt="moto">
+							</div>
+							<div class="col-xs-5">
+								<h6><strong>Automóvil</strong></h6>
+								<p>máximo 5 pasajeros</p>
+							</div>
+							<div class="col-xs-3"></div>
+							<span>$ 4.890</span>
+						</div><!--fin vehiculo 2-->
+						<div class="row row-vehiculo">
+							<div class="col-xs-1">
+								<div class="radio">
+								  <label>
+								    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+								  </label>
+								</div>
+							</div>
+							<div class="col-xs-3">
+								<img src="dist/img/van.jpg" class="img-responsive tetx-center" alt="moto">
+							</div>
+							<div class="col-xs-5">
+								<h6><strong>Mini van</strong></h6>
+								<p>máximo 10 pasajeros</p>
+							</div>
+							<div class="col-xs-3"></div>
+							<span>$ 9.400</span>
+						</div><!--fin vehiculo 3-->
+						<div class="row row-vehiculo">
+							<div class="col-xs-1">
+								<div class="radio">
+								  <label>
+								    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+								  </label>
+								</div>
+							</div>
+							<div class="col-xs-3">
+								<img src="dist/img/camion.jpg" class="img-responsive tetx-center" alt="moto">
+							</div>
+							<div class="col-xs-5">
+								<h6><strong>Camión</strong></h6>
+								<p>máximo 3 pasajeros</p>
+							</div>
+							<div class="col-xs-3"></div>
+							<span>$ 15.040</span>
+						</div><!--fin vehiculo 4-->
+						<div class="row">
+							<div class="col-xs-9">
+								<h6 class="pasajeros text-center"><strong>Cantidad de pasajeros</strong></h6>
+							</div>
+							<div class="col-xs-3">
+								<div class="form-group">
+								    <label for="exampleInputName2"></label>
+								    <input type="text" class="form-control" id="exampleInputName2">
+							  </div>
+							</div>
+						</div>	
+					</div><!--fin vehiculos-->
+					<button type="button" class="btn btn-primary">Compartir carro</button>
+				</div>
+				<div class="col-xs-12 col-md-4 col-md-offset-4 info">
+					<img src="dist/img/logo-peach.jpg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>			
+		</div>
+	</div><!--END HOME SECTION-->
+
+
+	<section id="calculator" >
+		<div class="container">
+		</div>
+	</section><!--END PROJECT SECTION-->
+	<div id="footer">
+	<!--	2014 www.yourdomain.com | All Right Reserved --> 
+	</div><!-- END FOOTER SECTION -->
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="dist/js/script.min.js"></script>
+</body>
+</html>

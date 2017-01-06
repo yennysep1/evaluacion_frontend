@@ -1,0 +1,71 @@
+h1{
+	@include titulo;
+}
+header {
+	background-color: #fff; 
+	height: 10vh;
+	padding: 10px 0px;
+
+	img{
+		width: 15em;
+	}
+	.fa{
+		font-size: 3em;
+		color: $colorPrincipal;
+		cursor: pointer;
+		z-index: 99;
+		margin: 0px -8px;
+
+	}
+}
+
+#home-sec{
+	background-image: url('../../dist/img/background.jpg');
+	height: 150vh;
+	.btn-primary{
+		@include boton;
+	}	
+	.sec{
+		@include fondoDiv(60px);
+	}
+	.info{
+		@include fondoDiv(30px);
+		display: none;
+		img{
+			width: 10em;
+		}
+	}
+}
+
+#vehiculos{
+	@include fondoDiv(20px);
+	span{
+		line-height: 2.3em;
+		color: $colorPrincipal;
+	}
+	img{
+		width: 3em;
+	}
+	p{
+		font-size: 0.8em;
+	}
+	h6{
+		margin-top: 0.5em;
+	}
+	.btn-primary{
+		@include boton;
+	}
+	.pasajeros{
+		margin-top: 3em;
+	}
+}
+
+
+
+
+
+
+
+
+
+

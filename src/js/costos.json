@@ -1,0 +1,25 @@
+{
+  "cost_estimates": [
+    {
+      "tipo_vehiculo": "moto",
+      "cantidad_pasajeros": 2,
+      "costo_viaje": 3.800
+    },
+    {
+ 	  "tipo_vehiculo": "auto",
+      "cantidad_pasajeros": 5,
+      "costo_viaje": 3.800
+    },
+    {
+ 	  "tipo_vehiculo": "MiniVan",
+      "cantidad_pasajeros": 8,
+      "costo_viaje": 3.800
+    },
+    {
+ 	  "tipo_vehiculo": "camion",
+      "cantidad_pasajeros": 3,
+      "costo_viaje": 3.800
+    }
+  ]
+
+}
