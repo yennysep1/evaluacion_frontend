@@ -64,17 +64,24 @@ $(document).ready(function(){
 		var pasajeros =$("#cant-pasajeros").val();
 
 		if(inputRadio =="input-moto"){
+			$('#myModal').modal(options);
 			$('.modal-body').attr('src','dist/img/moto.jpg');
 			$('.modal-body').html('<span>'+consumoMoto/pasajeros+'</span>');
 		}	
 		if(inputRadio =="input-auto"){
-			$('.modal-content').append('<p>'+'el valor por persona es '+'<br>'+'</p>'+'<h1>'+consumoMoto/pasajeros +'<h1>');
+			$('#myModal').modal(options);
+			$('.modal-body').attr('src','dist/img/moto.jpg');
+			$('.modal-body').html('<span>'+consumoMoto/pasajeros+'</span>');
 		}	
 		if(inputRadio =="input-van"){
-			$('.modal-content').append('<p>'+'el valor por persona es '+'<br>'+'</p>'+'<h1>'+consumoMoto/pasajeros +'<h1>');
+			$('#myModal').modal(options);
+			$('.modal-body').attr('src','dist/img/moto.jpg');
+			$('.modal-body').html('<span>'+consumoMoto/pasajeros+'</span>');
 		}
 		if(inputRadio =="input-camion"){
-			$('.modal-content').append('<p>'+'el valor por persona es '+'<br>'+'</p>'+'<h1>'+consumoMoto/pasajeros +'<h1>');
+			$('#myModal').modal(options);
+			$('.modal-body').attr('src','dist/img/moto.jpg');
+			$('.modal-body').html('<span>'+consumoMoto/pasajeros+'</span>');
 		}
     
     });
