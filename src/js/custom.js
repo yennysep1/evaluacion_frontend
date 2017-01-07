@@ -55,26 +55,32 @@ $(document).ready(function(){
 
     });
 
-    $('#compartir').on('click',function(){
+		 $('#compartir').on('click', function(ev){
+
+    	ev.preventDefault();
 
     	// validar input radio 
 		var inputRadio =$("input[name='radio']:checked").val();
 		var pasajeros =$("#cant-pasajeros").val();
 
 		if(inputRadio =="input-moto"){
-			alert('selecionaste moto FALTA MODAL');
+			$('.modal-body').attr('src','dist/img/moto.jpg');
+			$('.modal-body').html('<span>'+consumoMoto/pasajeros+'</span>');
 		}	
 		if(inputRadio =="input-auto"){
-			alert('selecionaste auto FALTA MODAL');
+			$('.modal-content').append('<p>'+'el valor por persona es '+'<br>'+'</p>'+'<h1>'+consumoMoto/pasajeros +'<h1>');
 		}	
 		if(inputRadio =="input-van"){
-			alert('selecionaste van FALTA MODAL');
-		}	
+			$('.modal-content').append('<p>'+'el valor por persona es '+'<br>'+'</p>'+'<h1>'+consumoMoto/pasajeros +'<h1>');
+		}
 		if(inputRadio =="input-camion"){
-			alert('selecionaste camion FALTA MODAL');
-		}	
-
+			$('.modal-content').append('<p>'+'el valor por persona es '+'<br>'+'</p>'+'<h1>'+consumoMoto/pasajeros +'<h1>');
+		}
+    
     });
+
 
 });
 
+
+  

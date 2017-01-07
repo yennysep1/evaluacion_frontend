@@ -26,6 +26,21 @@
 		</div><!-- fin container-->
 	</header><!--END NAV SECTION -->
 
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+ 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+   		<img src="dist/img/logo-gris.jpg" alt="">
+   		<p>Costo por persona es :</p>
+   		<span id="costoPP"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fin modal-->
 
 	<div id="home-sec">   
 		<div class="container">
@@ -135,20 +150,20 @@
 							</div>
 						</div>	
 					</div><!--fin vehiculos-->
-					<button type="button" class="btn btn-primary" id="compartir">Compartir carro</button>
+					
+					<!--boton-->
+					<button type="button" class="btn btn-primary" data-toggle="modal" id="compartir" data-target="#myModal">Más Info</button>
 				</div>
-				<div class="col-xs-12 col-md-4 col-md-offset-4 info">
-					<img src="dist/img/logo-peach.jpg" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
-			</div>			
+			</div>
 		</div>
-	</div><!--END HOME SECTION-->
+	</div>
 
 	<script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
 	<script type="text/javascript" src="dist/js/script.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 </html>
