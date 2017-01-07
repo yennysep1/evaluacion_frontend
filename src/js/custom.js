@@ -1,7 +1,6 @@
 $(document).ready(function(){
 	
 	// llenar selec de forma dinamica
-	var ciudades = get_regiones();
 	var ciudadOrigen = $('#sel1');
 	var ciudadDestino = $('#sel2');
 
@@ -9,13 +8,34 @@ $(document).ready(function(){
 		ciudadOrigen.append('<option value="'+ciudades[index].name+'">'+ciudades[index].name+'</option>');
 		ciudadDestino.append('<option value="'+ciudades[index].name+'">'+ciudades[index].name+'</option>');
 
-	// tomar el valor de los select
 	});
 
-  
-       
+	$('#buscar').on('click', function(){
 
+	    var selectOrigen = $('#sel1').val();
+	    var selectDestino = $('#sel2').val();
 
+	    //validacion de selectores
+	    if (selectOrigen == 'null'){
+	    	alert('debe ingresar ciudad de origen!');
+	        return false;
+	    } 
+	    if (selectDestino == 'null'){
+	    	alert('debe ingresar ciudad de destino!');
+	        return false;
+	    }
 
+	    //iteracion en arreglo para identificar selectores
+	    $.each(ciudades, function(index,item){
+	      if(ciudades[index].name == selectOrigen){
+	        selectOrigen = ciudades[index];
+	      }
+	      if(ciudades[index].name == selectDestino){
+	        selectDestino= ciudades[index];
+	      }
+
+	  		console.log();
+	  	});
+	});
 
 });
