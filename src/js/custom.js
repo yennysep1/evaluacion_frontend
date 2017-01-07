@@ -25,16 +25,19 @@ $(document).ready(function(){
 	        return false;
 	    }
 
+	    var origen = "null";
+	    var destino = "null";
+
 	    //iteracion en arreglo para identificar selectores
 	    $.each(ciudades, function(index,item){
 	      if(ciudades[index].name == selectOrigen){
-	        selectOrigen = ciudades[index];
+	       origen = ciudades[index];
 	      }
 	      if(ciudades[index].name == selectDestino){
-	        selectDestino= ciudades[index];
+	        destino = ciudades[index];
 	      }
+	  	  console.log(Math.abs(destino.distance-origen.distance));
 
-	  		console.log();
 	  	});
 	});
 
