@@ -36,7 +36,15 @@ $(document).ready(function(){
 	      if(ciudades[index].name == selectDestino){
 	        destino = ciudades[index];
 	      }
-	  	  console.log(Math.abs(destino.distance-origen.distance));
+	      // calculo de consumo de gasolina por vehiculo
+	  	  var distancia =  Math.abs(destino.distance-origen.distance);
+	  	  var consumoAuto = Math.round(distancia/12*673);
+	  	  var consumoMoto = Math.round(distancia/21*673);
+	  	  var consumoMinivan = Math.round(distancia/7*673);
+	  	  var consumoCamion = Math.round(distancia/6*673);
+
+	  	  console.log(consumoMoto);
+
 
 	  	});
 	});
