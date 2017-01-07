@@ -43,6 +43,7 @@ $(document).ready(function(){
 	  	  var consumoMinivan = Math.round(distancia/7*673);
 	  	  var consumoCamion = Math.round(distancia/6*673);
 
+	  	 //manipulacion del DOM - agregando valores 
 	  	 $('#vMoto').html('$' + consumoAuto);
 	  	 $('#vAuto').html('$' + consumoMoto);
 	  	 $('#vVan').html('$' + consumoMinivan);
@@ -50,8 +51,30 @@ $(document).ready(function(){
 
 	  	 $('#vehiculos,#compartir').show();
 
-
 	  	});
-	});
+
+    });
+
+    $('#compartir').on('click',function(){
+
+    	// validar input radio 
+		var inputRadio =$("input[name='radio']:checked").val();
+		var pasajeros =$("#cant-pasajeros").val();
+
+		if(inputRadio =="input-moto"){
+			alert('selecionaste moto FALTA MODAL');
+		}	
+		if(inputRadio =="input-auto"){
+			alert('selecionaste auto FALTA MODAL');
+		}	
+		if(inputRadio =="input-van"){
+			alert('selecionaste van FALTA MODAL');
+		}	
+		if(inputRadio =="input-camion"){
+			alert('selecionaste camion FALTA MODAL');
+		}	
+
+    });
 
 });
+
