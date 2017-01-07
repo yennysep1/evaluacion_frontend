@@ -38,6 +38,7 @@ header {
 }
 
 #vehiculos{
+	display: none;
 	@include fondoDiv(20px);
 	span{
 		line-height: 2.3em;
@@ -58,6 +59,10 @@ header {
 	.pasajeros{
 		margin-top: 3em;
 	}
+}
+
+#compartir{
+	display:none;
 }
 
 

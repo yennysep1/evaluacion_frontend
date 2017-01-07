@@ -43,7 +43,12 @@ $(document).ready(function(){
 	  	  var consumoMinivan = Math.round(distancia/7*673);
 	  	  var consumoCamion = Math.round(distancia/6*673);
 
-	  	  console.log(consumoMoto);
+	  	 $('#vMoto').html('$' + consumoAuto);
+	  	 $('#vAuto').html('$' + consumoMoto);
+	  	 $('#vVan').html('$' + consumoMinivan);
+	  	 $('#vCamion').html('$' + consumoCamion);
+
+	  	 $('#vehiculos,#compartir').show();
 
 
 	  	});
