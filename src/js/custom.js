@@ -55,9 +55,7 @@ $(document).ready(function(){
 
     });
 
-		 $('#compartir').on('click', function(ev){
-
-    	ev.preventDefault();
+		 $('#compartir').on('click', function(){
 
     	// validar input radio 
 		var inputRadio =$("input[name='radio']:checked").val();
@@ -65,27 +63,26 @@ $(document).ready(function(){
 
 		if(inputRadio =="input-moto"){
 			$('#myModal').modal(options);
-			$('.modal-body').attr('src','dist/img/moto.jpg');
-			$('.modal-body').html('<span>'+consumoMoto/pasajeros+'</span>');
+			$('#img-modal').attr('src','dist/img/moto.jpg');
+			$('#costoPP').html(consumoMoto/pasajeros);
 		}	
 		if(inputRadio =="input-auto"){
 			$('#myModal').modal(options);
-			$('.modal-body').attr('src','dist/img/moto.jpg');
-			$('.modal-body').html('<span>'+consumoMoto/pasajeros+'</span>');
+			$('#img-modal').attr('src','dist/img/auto.jpg');
+			$('#costoPP').html(consumoAuto/pasajeros);
 		}	
 		if(inputRadio =="input-van"){
 			$('#myModal').modal(options);
-			$('.modal-body').attr('src','dist/img/moto.jpg');
-			$('.modal-body').html('<span>'+consumoMoto/pasajeros+'</span>');
+			$('#img-modal').attr('src','dist/img/van.jpg');
+			$('#costoPP').html(consumoMinivan/pasajeros);
 		}
 		if(inputRadio =="input-camion"){
 			$('#myModal').modal(options);
-			$('.modal-body').attr('src','dist/img/moto.jpg');
-			$('.modal-body').html('<span>'+consumoMoto/pasajeros+'</span>');
+			$('#img-modal').attr('src','dist/img/camion.jpg');
+			$('#costoPP').html(consumoCamion/pasajeros);
 		}
-    
-    });
 
+    });
 
 });
 
